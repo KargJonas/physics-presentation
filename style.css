@@ -1,0 +1,78 @@
+body {
+  background: rgb(68,58,180);
+background: linear-gradient(140deg, rgba(68,58,180,1) 0%, rgba(131,58,180,1) 26%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 70%, rgba(146,252,69,1) 100%);
+}
+
+.snap {
+  background-color: white;
+  /* background-color: lightblue; */
+  font-family: Roboto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#title {
+  margin: auto;
+  width: max-content;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#title h1 {
+  font-family: Roboto-Slab-Bold;
+  font-size: 6vw;
+  margin: 0;
+  text-decoration: underline;
+}
+
+#title h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+p {
+  font-size: 30px;
+  /* margin-left: 20px; */
+}
+
+li {
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+#aerodynamik {
+  width: 100%;
+}
+
+#div-curl {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+}
+
+#div-curl img {
+  height: 200px;
+}
+
+.MathJax_Display {
+  text-align: left !important;
+  margin-left: 50px;
+}
+
+/* .rotate {
+  animation: rotate infinite forwards linear 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

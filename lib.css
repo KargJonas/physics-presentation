@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto-Regular;
+}
+
+.snap {
+  height: 84vh;
+  width: 84vw;
+  margin: 5vh 5vw 10vh 5vw;
+  padding: 3vh 3vw;
+  overflow: hidden;
+}
+
+#page-count {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: Roboto;
+  font-weight: bold;
+  margin: 5px;
+  font-size: 22px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Slab-Bold;
+  src: url("./assets/RobotoSlab-Bold.ttf");
+}

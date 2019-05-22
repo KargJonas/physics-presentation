@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vektorfelder</title>
+  <link rel="stylesheet" href="lib.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+  <div class="snap">
+    <div id="title">
+      <h1>Vektorfelder</h1>
+      <h2>Jonas Karg ↗</h2>
+    </div>
+  </div>
+
+  <div class="snap">
+    <h1>Was ist ein Vektorfeld?</h1>
+    <p>Eine <b>Funktion, welche jedem Punkt im Raum einen Vektor zuordnet.</b></p>
+    <span class="formula">
+      \[S\rightarrow \vec{R}\space\space\space\space\space\space\space\space\Rightarrow\space\space\space\space\space\space\space F\left(x, y\right) =\begin{bmatrix}\hat{x} \\ \hat{y}\end{bmatrix}\]
+    </span>
+    <canvas id="cnv-1"></canvas>
+  </div>
+
+  <div class="snap">
+    <p>Auch eine <b>Zeitkomponente</b> ist möglich!</p>
+    <span class="formula">
+      \[F\left(x, y, t\right) =\begin{bmatrix}\hat{x} \\ \hat{y}\end{bmatrix}\]
+    </span>
+    <h2>Beispiel:</h2>
+    <span class="formula">
+      \[F\left(x, y, t\right) =\begin{bmatrix}cos(\sqrt{x^{2}+y^{2}}+t) \\ sin(\sqrt{x^{2}+y^{2}}+t)\end{bmatrix}\]
+    </span>
+    <canvas id="cnv-2"></canvas>
+  </div>
+
+  <div class="snap">
+    <h1>Eigenschaften</h1>
+    <!-- <p>Vektorfelder sind vor allem in der Physik extrem nützlich, sie können z.B. zur Beschreibung von den Bewegungen -->
+      <!-- von Objekten in Gravitationsfeldern oder Magnetfeldern benutzt werden:</p> -->
+    <p>Vektorfelder sind vor allem in der Physik extrem nützlich. Einige Beispiele:</p>
+    <ul>
+      <li>Bewegung von Partikeln oder Flüssigkeiten.</li>
+      <li>Aerodynamik und Strömungslehre</li>
+      <li>Magnetfelder</li>
+      <li>Elektrodynamik</li>
+      <li>Strömungsfelder</li>
+      <li>Gravitation</li>
+    </ul>
+    <img id="aerodynamik" src="assets/aerodynamik.jpg">
+  </div>
+
+  <div class="snap">
+    <h1>Strömungsfelder</h1>
+    <p>Strömungsfelder werden hauptsächlich verwendet um <b>Flüssigkeitsbewegungen</b> oder <b>die Verteilung von
+        elektrischen Ladungen</b> zu beschreiben und zu berechnen.</p>
+    <ul>
+      <li>Strömungsfelder beschreiben den <b>Fluss von Partikeln</b> über ein Vektorfeld.</li>
+      <li>Vereinfacht: Die Vektorpfeile zeigen den Partikeln wo sie als nächstes hin müssen.</li>
+      <li>Es wird in er Regel immer von <b>unendlich vielen Partikeln</b> ausgegangen, weshalb oft die
+        <b>Infinitesimalrechnung</b> benötigt wird.</li>
+      <br>
+      <li>Die <b>Divergenz</b> eines Vektorfeldes ist ein Skalarfeld, welches an jedem Punkt angibt, wie sehr die
+        umligenden Vektoren von dem Punkt wegzeigen. Sie zeigt die <b>Quellendichte</b> des Feldes an jedem
+        Punkt an.</li>
+      <li>Die <b>Rotation</b> ist ein weiteres skalarfeld, welches beschreibt wie sehr sich umliegende Vektoren um einen
+        Vektor "drehen".</li>
+      <div id="div-curl">
+        <img src="assets/divergence.png">
+        <img src="assets/curl.png">
+      </div>
+    </ul>
+  </div>
+
+  <div class="snap">
+    <canvas id="cnv-3"></canvas>
+  </div>
+
+  <div class="snap">
+    <canvas id="cnv-4"></canvas>
+  </div>
+
+  <div class="snap">
+    <canvas id="cnv-5"></canvas>
+  </div>
+
+  <div class="snap">
+    <canvas id="cnv-6"></canvas>
+  </div>
+
+  <script src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+  <script src="vf/vector.js"></script>
+  <script src="vf/particle.js"></script>
+  <script src="vf/index.js"></script>
+  <script src="main.js"></script>
+  <script src="lib.js"></script>
+</body>
+
+</html>
